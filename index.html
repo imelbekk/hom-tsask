@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="1-savol">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h1>Todo List</h1>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" class="form-control" id="text" placeholder="Enter your text">
+
+                            <button class="btn btn-success mt-4" onclick="addLists()">Add Lists</button>
+                            <ul id="lists">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="2-savol">
+        <div class="container mt-5">
+             <div class="row"> 
+                <div class="col-md-6 offset-3">
+                    <div class="card">
+                        <textarea  id="textarea" class="form-control" placeholder="Enter your text..."></textarea>
+
+                        <button onclick="btn_1()" class="mt-4 btn btn-success ">Words?</button>
+
+                        <button onclick="delBtn()" class="mt-4 btn btn-danger">Delete</button>
+                        
+                        <p class="mt-3">
+                            Result: <span id="result"></span>
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
